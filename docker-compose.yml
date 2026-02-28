@@ -14,7 +14,7 @@ services:
     ports:
       - 7785:7777
     volumes:
-      - ./tModLoader:/home/tml/.local/share/Terraria/tModLoader
+      - /volume2/docker/terraria-tmodloader:/home/tml/.local/share/Terraria/tModLoader
     environment:
       ### Comment the variable 'WORLD' to create a new world (Using AUTOCREATE, WORLDNAME, DIFFICULTY and SEED)
       ### Uncomment the variable 'WORLD' to use an existing world. This will ebable the server to start with no user interaction through the cli.
